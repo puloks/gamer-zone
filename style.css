@@ -3,23 +3,27 @@ body{
     padding: 0;
     font-family: 'Work Sans', sans-serif;
 }
+/*Header topbar*/
+header .topbar{
+    display: flex;
+    justify-content: space-between;
+}
+
 /*nav bar*/
 header{
     background-color: aliceblue;
 }
 .container{
     width: 1080px;
-    height: 70px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
 }
 .logo {
     align-items: center;
+    cursor: pointer;
 }
 .logo img{
-    width: 55%;
-    height: 55%;
+    width: 25%;
+    height: 25%;
 }
 .logo h3{
     color: #0B0223;
@@ -44,7 +48,7 @@ header{
     list-style: none;
     padding: 0px 10px;
 }
-..menu-items ul li ul{
+.menu-items ul li ul{
     align-items: center;
 }
 .menu-items ul a{
@@ -60,8 +64,10 @@ header{
 }
 
 /*Hero Area*/
-.hero-area{
+.hero-area > .container{
     padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
 }
 .hero-content{
     margin-top: 50px;
@@ -92,7 +98,6 @@ header{
     text-align: center;
     font-size: 95px;
     font-weight: 800;
-    line-height: normal
     text-transform: uppercase;
 }
 .hero-image img{
@@ -107,7 +112,8 @@ header{
     color: #fff;
     font-size: 18px;
     font-weight: 700;
-    padding: 10px 20px;
+    padding: 15px 25px;
+    cursor: pointer;
 }
 .button-primary {
     border-radius: 48px;
@@ -116,5 +122,364 @@ header{
     color: #fff;
     font-size: 18px;
     font-weight: 700;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+
+/*Online game video section*/
+.game-sec{
+    margin: 90px 0px 30px 0px;
+}
+.four-images{
+    display: flex;
+}
+.four-images .image-container {
+      position: relative;
+      display: inline-block;
+      margin: 10px;
+    }
+    
+.four-images .image-container:hover .overlay {
+      opacity: 1;
+    }
+.four-images .image-container img {
+    width: 100%;
+    height: 70%;
+}   
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 2px solid #ff42a5;
+}
+.overlay .overley-text{
+    color: #ff42a5;
+}   
+.overlay-icon {
+      color: #fff;
+      font-size: 24px;
+      margin-top: 10px;
+    }
+
+.section-title{
+    text-align: center;
+}
+.section-title h2{
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+}
+.section-title span{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.section-describtion{
+    text-align: center;
+}
+
+/*Play Game section*/
+.playgame >.container{
+    display: flex;
+    justify-content: space-between;
+}
+.playgame .palaygame-content{
+    text-align: right;
+    padding-right:180px;
+}
+.playgame .palaygame-content h2{
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+}
+.playgame .palaygame-content h2 span{
+    color: #e94bbc;
+}
+.playgame .palaygame-content p {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    width: 370px;
+}
+.playgame-images{
+    position: relative;
+}
+.playgame-images .main-image img{
+    width: 100%;
+}
+.playgame-images .sub-images img {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    bottom: -35px;
+    left: -80px;
+}
+
+
+/*Game hover section*/
+.game-main-section .game-part ul{
+    display: flex;
+}
+.game-main-section .game-part ul li{
+    list-style: none;
+    margin-right: 12px;
+}
+.game-main-section{
+    margin: 100px 0;
+}
+.game-main-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
+}
+.game-part ul li img {
+    margin-left: -35px;
+}
+.game-part{
+    margin: 5px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    background: #f3f3f3;
+}
+.game-part:hover{
+    border: 1px solid red;
+}
+.game-part:hover{
+    color: red;
+}
+
+/*Footer*/
+footer{
+    background: #0b0223;
+}
+.footer-content .logo{
+    display: flex;
+    justify-content: center;
+}
+.footer-content .logo img{
+    width: 8%;
+}
+.footer-content .footer-menu{
+    display: flex;
+    justify-content: center;
+}
+.footer-menu ul{
+    display: flex;
+}
+.footer-menu ul li{
+    list-style: none;
+}
+.footer-menu ul li a{
+    text-decoration: none;
+    margin-right: 5px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.footer-icon ul{
+    display: flex;
+}
+.footer-icon ul li{
+    list-style: none;
+}
+.footer-icon ul li a{
+    text-decoration: none;
+    margin-right: 5px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 30px;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    cursor: pointer;
+}
+.footer-content .footer-icon {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+.terms-menu ul li a {
+    color: rgba(255, 255, 255, 0.60);
+    font-weight: 400;
+    cursor: pointer;
+}
+.footer-content > span {
+    color: red;
+    text-align: center;
+    display: block;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 90px;
+}
+footer {
+    background: #0b0223;
+    padding: 50px 0 60px 0;
+}
+
+/*Media Query*/
+@media (min-width: 768px) and (max-width: 1024px) { 
+.container {
+    width: 650px;
+    margin: 0 auto;
+}  
+.logo h3 {
+    font-size: 32px;
+}
+.menu-items ul a {
+    font-size: 14px;
+}
+.menu-items ul li {
+    padding: 0px 8px;
+    font-size: 14px;
+}
+.hero-content h2 {
+    color: #0B0223;
+    font-size: 32px;
+}
+.hero-content span {
+    font-size: 67px;
+}
+.hero-content ul li {
+    font-size: 14px;
+}
+.same-btn, .button-primary{
+    font-size: 14px;
     padding: 10px 20px;
+}
+.hero-image img {
+    height: 300px;
+}
+.section-title h2 {
+    font-size: 38px;
+}
+p{
+    font-size: 12px;
+}
+.playgame .palaygame-content h2 {
+    font-size: 36px;
+    line-height: 44px;
+}
+.playgame .palaygame-content h2 {
+    font-size: 32px;
+    line-height: 36px;
+}
+.playgame .palaygame-content p {
+    font-size: 14px;
+    line-height: 20px;
+    width: 370px;
+}
+.playgame .palaygame-content {
+    text-align: right;
+    margin-right: 0px;
+}
+.playgame .palaygame-content {
+    padding-right: 90px;
+}
+.playgame-images .sub-images img {
+    bottom: 5px;
+    left: -39px;
+}
+.game-main-section {
+    grid-template-columns: repeat(3, 1fr);
+}
+.footer-menu ul li a {
+    margin-right: 5px;
+    font-size: 14px;
+    margin-right: 22px;
+}
+.footer-content .footer-icon {
+    padding: 0px 0;
+}
+
+.footer-icon ul li a {
+    font-size: 30px;
+    margin-right: 20px;
+}
+.footer-content > span {
+    font-size: 12px;
+    margin-top: 50px;
+}
+footer {
+    padding: 8px 0 60px 0;
+}
+}
+
+
+@media (min-width: 381px) and (max-width: 767px) {
+.container {
+    width: 100% !important;
+}
+header .topbar {
+    flex-direction: column;
+}
+header .topbar {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-area > .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.four-images {
+    display: flex;
+    flex-direction: column;
+}
+/*.four-images .image-container {
+    height: 450px;
+}*/
+.game-main-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+.logo, .menu-items {
+    justify-content: center;
+}
+
+.logo img {
+    width: 15%;
+}
+.menu-items ul {
+    flex-direction: column;
+}
+.menu-items ul li {
+    
+}
+.logo, .menu-items {
+    margin: -20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 }
